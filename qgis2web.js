@@ -173,7 +173,7 @@ var onPointerMove = function(evt) {
                             if (layer.get('fieldImages')[currentFeatureKeys[i]] != "ExternalResource") {
                                 popupField += (clusterFeature.get(currentFeatureKeys[i]) != null ? autolinker.link(clusterFeature.get(currentFeatureKeys[i]).toLocaleString()) + '</td>' : '');
                             } else {
-                                popupField += (clusterFeature.get(currentFeatureKeys[i]) != null ? '<img src="images/' + clusterFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim()  + '" style="width: 300px; height: 200px;" /></td>' : '');
+                                popupField += (clusterFeature.get(currentFeatureKeys[i]) != null ? '<img src="images/' + clusterFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim()  + '" style="width: 4px; height: 3px;" /></td>' : '');
                             }
                             popupText += '<tr>' + popupField + '</tr>';
                         }
@@ -199,7 +199,7 @@ var onPointerMove = function(evt) {
                         if (layer.get('fieldImages')[currentFeatureKeys[i]] != "ExternalResource") {
                             popupField += (currentFeature.get(currentFeatureKeys[i]) != null ? autolinker.link(currentFeature.get(currentFeatureKeys[i]).toLocaleString()) + '</td>' : '');
                         } else {
-                            popupField += (currentFeature.get(currentFeatureKeys[i]) != null ? '<img src="images/' + currentFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim()  + '" style="width: 200px; height: 150px;" /></td>' : '');
+                            popupField += (currentFeature.get(currentFeatureKeys[i]) != null ? '<img src="images/' + currentFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim()  + '" style="width: 4px; height: 3px;" /></td>' : '');
                         }
                         popupText += '<tr>' + popupField + '</tr>';
                     }
@@ -316,7 +316,7 @@ var onSingleClick = function(evt) {
                                 if (layer.get('fieldImages')[currentFeatureKeys[i]] != "ExternalResource") {
                                     popupField += (clusterFeature.get(currentFeatureKeys[i]) != null ? autolinker.link(clusterFeature.get(currentFeatureKeys[i]).toLocaleString()) + '</td>' : '');
                                 } else {
-                                    popupField += (clusterFeature.get(currentFeatureKeys[i]) != null ? '<img src="images/' + clusterFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim()  + '" style="width: 200px; height: 150px;" /></td>' : '');
+                                    popupField += (clusterFeature.get(currentFeatureKeys[i]) != null ? '<img src="images/' + clusterFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim()  + '" style="width: 4px; height: 3px;" /></td>' : '');
                                 }
                                 popupText += '<tr>' + popupField + '</tr>';
                             }
@@ -342,7 +342,7 @@ var onSingleClick = function(evt) {
                             if (layer.get('fieldImages')[currentFeatureKeys[i]] != "ExternalResource") {
                                 popupField += (currentFeature.get(currentFeatureKeys[i]) != null ? autolinker.link(currentFeature.get(currentFeatureKeys[i]).toLocaleString()) + '</td>' : '');
                             } else {
-                                popupField += (currentFeature.get(currentFeatureKeys[i]) != null ? '<img src="images/' + currentFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim()  + '" style="width: 200px; height: 150px;" /></td>' : '');
+                                popupField += (currentFeature.get(currentFeatureKeys[i]) != null ? '<img src="images/' + currentFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim()  + '" style="width: 4px; height: 3px;" /></td>' : '');
                             }
                             popupText += '<tr>' + popupField + '</tr>';
                         }
@@ -368,7 +368,7 @@ var onSingleClick = function(evt) {
                     'INFO_FORMAT': 'text/html',
                 });
             if (url) {
-                popupText = popupText + '<iframe style="width:100%;height:110px;border:0px;" id="iframe" seamless src="' + url + '"></iframe>';
+                popupText = popupText + '<iframe style="width:100%;height:11px;border:0px;" id="iframe" seamless src="' + url + '"></iframe>';
             }
         }
     }
